@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 
-// POST /signup
 router.post('/signup', async (req, res) => {
     try {
         const { username, password } = req.body;
@@ -25,7 +24,6 @@ router.post('/signup', async (req, res) => {
     }
 });
 
-// POST /login
 router.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;
